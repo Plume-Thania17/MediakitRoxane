@@ -6,6 +6,7 @@ const collaborationTypes = [
   {
     icon: Camera,
     title: "UGC",
+
     description: "Contenu authentique et original pour vos campagnes, tourne de maniere naturelle et engageante.",
   },
   {
@@ -28,8 +29,8 @@ const collaborationTypes = [
 const whyMe = [
   {
     icon: Heart,
-    title: "Authenticite",
-    text: "Contenu sincere, une audience qui fait confiance a mes recommandations.",
+    title: "Authenticité",
+    text: "Contenu sincère, une audience qui fait confiance a mes recommandations.",
   },
   {
     icon: Sparkles,
@@ -38,7 +39,7 @@ const whyMe = [
   },
   {
     icon: Target,
-    title: "Audience ciblee",
+    title: "Audience ciblée",
     text: "88% de femmes 18-34 ans, basees en Afrique francophone et en France.",
   },
 ]

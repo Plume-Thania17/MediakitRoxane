@@ -48,7 +48,7 @@ export function ContactSection() {
                 </a>
 
                 <a
-                  href="https://www.tiktok.com/@angeroxane_miessan"
+                  href="https://www.tiktok.com/@myra_msn?_r=1&_t=ZS-93zcnDXVD0f"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-between p-4 rounded-xl bg-white border border-[#CEA3A6]/15 hover:border-[#984546]/30 transition-colors group"
@@ -62,10 +62,16 @@ export function ContactSection() {
                   <ArrowUpRight className="w-4 h-4 text-[#CEA3A6] group-hover:text-[#984546] transition-colors" />
                 </a>
 
-                <div className="flex items-center gap-3 p-4 rounded-xl bg-white border border-[#CEA3A6]/15">
-                  <Mail className="w-4 h-4 text-[#984546]" />
-                  <span className="font-sans text-sm text-[#3d2020]">contact@angeroxane.com</span>
-                </div>
+                <a
+                  href="mailto:miessanroxane0111@gmail.com"
+                  className="flex items-center justify-between p-4 rounded-xl bg-white border border-[#CEA3A6]/15 hover:border-[#984546]/30 transition-colors group"
+                >
+                  <div className="flex items-center gap-3">
+                    <Mail className="w-4 h-4 text-[#984546]" />
+                    <span className="font-sans text-sm text-[#3d2020]">miessanroxane0111@gmail.com</span>
+                  </div>
+                  <ArrowUpRight className="w-4 h-4 text-[#CEA3A6] group-hover:text-[#984546] transition-colors" />
+                </a>
               </div>
             </div>
           </div>
@@ -75,7 +81,7 @@ export function ContactSection() {
         <div className="text-center mt-14 space-y-2">
           <p className="font-serif italic text-lg text-[#984546]">Miessan Roxane</p>
           <p className="font-sans text-[10px] tracking-[0.2em] uppercase text-[#CEA3A6]">
-            {"Media Kit 2025 \u2022 Tous droits r\u00e9serv\u00e9s"}
+            {"Media Kit 2026 \u2022 Tous droits r\u00e9serv\u00e9s"}
           </p>
         </div>
       </div>

@@ -1,13 +1,35 @@
 "use client"
-
 import Image from "next/image"
 
 const galleryImages = [
   { src: "/images/r1.jpeg", alt: "Roxane portrait closeup", tall: true },
-  { src: "/images/r3.jpeg", alt: "Roxane restaurant lifestyle", tall: false },
+  { src: "/images/r12.jpeg", alt: "Roxane restaurant lifestyle", tall: false },
   { src: "/images/r5.jpeg", alt: "Roxane seated elegant pose", tall: false },
-  { src: "/images/r4.jpeg", alt: "Roxane social media story", tall: true },
+  { src: "/images/r7.jpeg", alt: "Roxane social media story", tall: true },
+   { src: "/images/r13.jpeg", alt: "Roxane social media story", tall: true },
+   { src: "/images/r11.jpeg", alt: "Photo 1" }
+  
 ]
+
+// ↓ Ajoute tes liens d'images ici (laisse "" pour garder le placeholder)
+const extraPhotos = [
+  { src: "/images/r19.jpeg", alt: "Photo 1" },
+  { src: "/images/r4.jpeg", alt: "Photo 2" },
+  { src: "images/r3.jpeg", alt: "Photo 3" },
+  { src: "images/r8.jpeg", alt: "Photo 4" },
+  { src: "images/r9.jpeg", alt: "Photo 5" },
+  { src: "images/r10.jpeg", alt: "Photo 6" },
+  { src: "/images/r20.jpeg", alt: "Photo 2" },
+  { src: "images/r15.jpeg", alt: "Photo 3" },
+  { src: "images/r14.jpeg", alt: "Photo 4" },
+  { src: "images/r16.jpeg", alt: "Photo 5" },
+  { src: "images/r18.jpeg", alt: "Photo 6" },
+  { src: "images/r22.jpeg", alt: "Photo 6" },
+  
+  
+]
+
+
 
 export function GallerySection() {
   return (
@@ -43,19 +65,30 @@ export function GallerySection() {
           ))}
         </div>
 
-        {/* Placeholder spots for more photos */}
+        {/* Extra photos grid */}
         <div className="grid grid-cols-3 md:grid-cols-6 gap-3 mb-12">
-          {Array.from({ length: 6 }).map((_, i) => (
+          {extraPhotos.map((photo, i) => (
             <div
               key={i}
-              className="aspect-square rounded-xl border-2 border-dashed border-[#CEA3A6]/30 flex items-center justify-center bg-[#F6DCDA]/10"
+              className="aspect-square rounded-xl overflow-hidden border-2 border-dashed border-[#CEA3A6]/30 bg-[#F6DCDA]/10 relative group"
             >
-              <div className="text-center">
-                <svg className="w-5 h-5 text-[#CEA3A6]/40 mx-auto mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
-                </svg>
-                <span className="text-[8px] font-sans text-[#CEA3A6]/50 uppercase tracking-wider">Photo</span>
-              </div>
+              {photo.src ? (
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              ) : (
+                <div className="flex items-center justify-center h-full">
+                  <div className="text-center">
+                    <svg className="w-5 h-5 text-[#CEA3A6]/40 mx-auto mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
+                    </svg>
+                    <span className="text-[8px] font-sans text-[#CEA3A6]/50 uppercase tracking-wider">Photo</span>
+                  </div>
+                </div>
+              )}
             </div>
           ))}
         </div>

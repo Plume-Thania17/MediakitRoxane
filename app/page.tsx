@@ -4,6 +4,7 @@ import { StatsSection } from "@/components/media-kit/stats-section"
 import { GallerySection } from "@/components/media-kit/gallery-section"
 import { BrandWorkSection } from "@/components/media-kit/brand-work-section"
 import { CollaborationSection } from "@/components/media-kit/collaboration-section"
+import { ProcessusSection } from "@/components/media-kit/ProcessusSection"
 import { ContactSection } from "@/components/media-kit/contact-section"
 
 export default function MediaKitPage() {
@@ -15,6 +16,7 @@ export default function MediaKitPage() {
       <GallerySection />
       <BrandWorkSection />
       <CollaborationSection />
+      <ProcessusSection />
       <ContactSection />
     </main>
   )

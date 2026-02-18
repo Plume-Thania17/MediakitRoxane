@@ -21,7 +21,7 @@ function ProgressBar({ label, value, max = 100 }: { label: string; value: number
 }
 
 const topStats = [
-  { icon: Users, value: "15K+", label: "Followers", sub: "Instagram" },
+  { icon: Users, value: "3K+", label: "Followers", sub: "Instagram" },
   { icon: Instagram, value: "88%", label: "Femmes", sub: "Genre dominant" },
   { icon: MapPin, value: "56%", label: "C\u00f4te d'Ivoire", sub: "Top localisation" },
   { icon: Clock, value: "15h-16h", label: "Pic d'activit\u00e9", sub: "Meilleure heure" },

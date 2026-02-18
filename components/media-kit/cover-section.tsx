@@ -13,8 +13,8 @@ export function CoverSection() {
       <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-12 pt-16 pb-20 flex flex-col items-center">
         {/* Top bar */}
         <div className="w-full flex items-center justify-between mb-16">
-          <p className="font-serif italic text-[#984546] text-lg">MR</p>
-          <p className="font-sans text-xs tracking-[0.25em] uppercase text-[#955A5C]/60">Media Kit 2025</p>
+          <p className="font-serif italic text-[#984546] text-lg">MR.</p>
+          <p className="font-sans text-xs tracking-[0.25em] uppercase text-[#955A5C]/60">Media Kit 2026</p>
         </div>
 
         {/* Main hero layout */}
@@ -49,7 +49,7 @@ export function CoverSection() {
                 Instagram
               </a>
               <a
-                href="https://www.tiktok.com/@angeroxane_miessan"
+                href="https://www.tiktok.com/@myra_msn?_r=1&_t=ZS-93zc4L37AAe"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#984546]/30 text-[#984546] text-xs font-sans tracking-wide hover:bg-[#984546]/5 transition-colors"
@@ -84,7 +84,7 @@ export function CoverSection() {
           <div className="md:col-span-2 relative">
             <div className="relative aspect-[3/4] rounded-[2rem] overflow-hidden shadow-2xl shadow-[#984546]/10">
               <Image
-                src="/images/r1.jpeg"
+                src="/images/r6.jpeg"
                 alt="Miessan Roxane portrait"
                 fill
                 className="object-cover object-top"
@@ -94,7 +94,7 @@ export function CoverSection() {
             {/* Small floating photo */}
             <div className="absolute -bottom-6 -left-8 md:-left-12 w-28 md:w-36 aspect-square rounded-2xl overflow-hidden shadow-xl border-4 border-[#faf6f4]">
               <Image
-                src="/images/r3.jpeg"
+                src="/images/r1.jpeg"
                 alt="Roxane lifestyle"
                 fill
                 className="object-cover"
